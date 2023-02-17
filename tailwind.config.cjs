@@ -10,7 +10,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        yourGrace: "Covered By Your Grace",
+        yourGrace: "'Covered By Your Grace'",
       },
     },
   },

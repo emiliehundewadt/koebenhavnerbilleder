@@ -5,35 +5,43 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KØBENHAVNERBILLEDER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="dark:bg-black bg-accent">
+  <body class="dark:bg-black md:dark:bg-black bg-accent">
     <div class="grid place-content-end">
       <button id="toogle-btn" class="m-4 w-10">toogle</button>
       <img src="img/moon.webp" alt="" width="50px" />
     </div>
     <div class="grid place-items-center p-8">
       <h1 class="pl-16 font-yourGrace text-7xl text-secondary">KØBENHAVNERBILLEDER</h1>
-      <p class="py-4 pl-80 text-4xl">- en guide til hipster foto</p>
-      <p style="margin-left: 36rem">af Sten Simons</p>
     </div>
+    <div grid grid-cols-3>
+      <div class="col-start-2">
+        <p>- en guide til hipster foto</p>
+        <p>af Sten Simons</p>
+      </div>
+    </div>
+
     <div class="grid place-items-center">
       <img src="img/Layer2.png" alt="herobillede" />
     </div>
     <div class="m-2 grid place-content-center">
       <button class="grid aspect-square h-20 w-96 place-content-center rounded-full bg-primary p-6">
-        <p class="place-items-center text-2xl font-bold">KØB HER</p>
+        <p class="place-items-center text-2xl">KØB HER</p>
       </button>
     </div>
     <div class="m-32 grid grid-cols-6">
-      <div class="col-span-4 col-start-2 mb-64">
+      <div class="col-span-4 col-start-2 mb-32">
         <p class="text-xl italic leading-relaxed">Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!</p>
       </div>
 
-      <div class="col-span-5 col-start-2 mb-80 grid h-36 place-content-center">
-        <div class="aspect-square rounded-3xl bg-primary">
-          <h2 class="mt-10 mb-10 grid place-content-center font-yourGrace text-4xl">FAKTA OM BOGEN</h2>
-          <div class="ml-10 text-xl leading-relaxed">
+      <div class="col-span-4 col-start-2 grid place-content-center">
+        <div class="mb-32 aspect-square rounded-3xl bg-primary">
+          <h2 class="mt-10 grid place-content-center font-yourGrace text-4xl">FAKTA OM BOGEN</h2>
+          <div class="mr-40 ml-40 text-xl leading-relaxed">
             <ul>
               <li>Titel: Københavnerbilleder - en guide til hipster foto</li>
               <li>Forfatter: Sten Simons</li>
@@ -78,7 +86,7 @@
 
       <div class="col-span-2 col-start-3">
         <div class="grid place-content-center">
-          <p class="m-8 mt-16 font-yourGrace text-4xl">FORFATTEREN</p>
+          <p class="m-8 mt-32 mb-16 font-yourGrace text-4xl">FORFATTEREN</p>
         </div>
       </div>
 
@@ -86,7 +94,7 @@
         <img src="img/sten_simons.jpg" alt="herobillede" />
       </div>
 
-      <div class="col-span-2 col-start-4 ml-4 text-xl">
+      <div class="col-span-2 col-start-4 ml-8 text-xl">
         <p>Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>
       </div>
       <div class="col-span-1 col-start-2 mt-2">
@@ -94,78 +102,76 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-5 place-content-center gap-8">
-      <div class="col-span-2 col-start-3 grid">
-        <p class="m-8 mt-16 font-yourGrace text-4xl">BOGENS KAPITLER</p>
+    <div class="grid grid-cols-5">
+      <div class="col-span-4 col-start-1 m-8 grid aspect-square place-content-center gap-x-8 rounded-3xl bg-primary">
+        <div class="col-span-2 col-start-3 grid">
+          <p class="mb-16 font-yourGrace text-4xl">BOGENS KAPITLER</p>
+        </div>
+
+        <div class="col-span-1 col-start-2 place-content-center">
+          <p class="mb-2 font-bold">Kapitel 1</p>
+          <p class="mb-2 italic">Intro til street foto</p>
+          <p>Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. Alt krydret med en masse gode eksempler på street fotos.</p>
+        </div>
+
+        <div class="col-span-1 col-start-3 place-content-center">
+          <p class="mb-2 font-bold">Kapitel 2</p>
+          <p class="mb-2 italic">Om at skyde street</p>
+          <p>Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.</p>
+        </div>
+
+        <div class="col-span-1 col-start-4 place-content-center">
+          <p class="mb-2 font-bold">Kapitel 3</p>
+          <p class="mb-2 italic">Om at finde det rette motiv</p>
+          <p>Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver.</p>
+        </div>
+
+        <div class="col-span-1 col-start-2 place-content-center">
+          <p class="mb-2 font-bold">Kapitel 4</p>
+          <p class="mb-2 italic">Digital street foto</p>
+          <p>De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto.</p>
+        </div>
+
+        <div class="col-span-1 col-start-3 place-content-center">
+          <p class="mb-2 font-bold">Kapitel 5</p>
+          <p class="mb-2 italic">Analog street foto</p>
+          <p>Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto.</p>
+        </div>
+
+        <div class="col-span-1 col-start-4 place-content-center">
+          <p class="mb-2 font-bold">Kapitel 6</p>
+          <p class="mb-2 italic">Om at skyde sort/hvid</p>
+          <p>Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering.</p>
+        </div>
+
+        <div class="col-span-1 col-start-2 place-content-center">
+          <p class="mb-2 font-bold">Kapitel 7</p>
+          <p class="mb-2 italic">Kreative teknikker</p>
+          <p>Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver, gamle filmruller og alle mulige andre, spændende kreative teknikker kan løfte dine fotografier fra at være kedelige dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende teknikker!</p>
+        </div>
+
+        <div class="col-span-1 col-start-3 place-content-center">
+          <p class="mb-2 font-bold">Kapitel 8</p>
+          <p>Kom helt tæt på!</p>
+          <p>Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf…</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 place-content-center gap-8">
+      <div class="col-span-1 col-start-2">
+        <p class="mb-16 mt-32 font-yourGrace text-4xl">BILLEDER FRA BOGEN</p>
       </div>
 
-      <div class="col-span-1 col-start-2 place-content-center">
-        <p>Kapitel 1</p>
-        <p>Intro til street foto</p>
-        <p>Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. Alt krydret med en masse gode eksempler på street fotos.</p>
-      </div>
-
-      <div class="col-span-1 col-start-3 place-content-center">
-        <p>Kapitel 2</p>
-        <p>Om at skyde street</p>
-        <p>Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.</p>
-      </div>
-
-      <div class="col-span-1 col-start-4 place-content-center">
-        <p>Kapitel 3</p>
-        <p>Om at finde det rette motiv</p>
-        <p>Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver.</p>
-      </div>
-
-      <div class="col-span-1 col-start-2 place-content-center">
-        <p>Kapitel 4</p>
-        <p>Digital street foto</p>
-        <p>De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto.</p>
-      </div>
-
-      <div class="col-span-1 col-start-3 place-content-center">
-        <p>Kapitel 5</p>
-        <p>Analog street foto</p>
-        <p>Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto.</p>
-      </div>
-
-      <div class="col-span-1 col-start-4 place-content-center">
-        <p>Kapitel 6</p>
-        <p>Om at skyde sort/hvid</p>
-        <p>Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering.</p>
-      </div>
-
-      <div class="col-span-1 col-start-1 place-content-center">
-        <p>Kapitel 7</p>
-        <p></p>
-        <p></p>
-      </div>
-
-      <div class="col-span-1 col-start-3 place-content-center">
-        <p>Kapitel 8</p>
-        <p></p>
-        <p></p>
-      </div>
-
-      <div class="col-span-1 col-start-5 place-content-center">
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
-
-      <div class="col-span-2 col-start-3 grid place-content-center">
-        <p class="m-8 mt-16 font-yourGrace text-4xl">BILLEDER FRA BOGEN</p>
-      </div>
-
-      <div class="col-span-1 col-start-2 place-content-center">
+      <div class="col-span-1 col-start-1 grid w-1/2">
         <img src="img/night.jpg" alt="herobillede" />
       </div>
 
-      <div class="col-span-1 col-start-3 place-content-center">
+      <div class="col-span-1 col-start-2 grid w-1/2">
         <img src="img/metro.jpg" alt="herobillede" />
       </div>
 
-      <div class="col-span-1 col-start-4 place-content-center">
+      <div class="col-span-1 col-start-3 grid w-1/2">
         <img src="img/oerestad.png" alt="herobillede" />
       </div>
     </div>
